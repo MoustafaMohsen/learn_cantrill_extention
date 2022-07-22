@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Cantrill show hours",
+  "description": "Set time on Cantrill courses",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://learn.cantrill.io/*"],
+      "js": [
+        "jquery.slim.js",
+        "content.js"
+      ]
+    }
+  ],
+  "icons": { 
+    "16": "logo.png",
+    "48": "logo.png",
+   "128": "logo.png" 
+  }
+}
